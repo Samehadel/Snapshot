@@ -32,7 +32,7 @@ class Home extends Component {
 
         return (
             <>
-                <Header showLogout={isLoggedIn} showSignup={false} showLogin={!isLoggedIn} showPost={true} />
+                <Header showLogout={isLoggedIn} showSignup={false} showLogin={!isLoggedIn} showPost={!isAdmin && isLoggedIn} />
                 <div className='images-grid' >
                     {images.map(image =>
                         <div className='image' key={image.id}>
@@ -55,7 +55,7 @@ class Home extends Component {
 
     componentDidMount() {
         const isAdmin = UserService.isAdmin();
-
+        console.log('isAdmin', isAdmin);
         if (isAdmin) {
             ImageService.getAllAdminImages()
                 .then(res => {

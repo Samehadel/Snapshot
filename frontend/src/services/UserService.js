@@ -11,8 +11,8 @@ class UserService {
     
     isAdmin(){
         const role = sessionStorage.getItem("role");
-    
-        return role == 'ROLE_USER' ? false : true; 
+        
+        return role == 'ROLE_ADMIN' ? true : false; 
     }
 
     getUserToken(){
