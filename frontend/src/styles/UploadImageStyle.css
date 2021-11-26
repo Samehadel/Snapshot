@@ -1,0 +1,38 @@
+form {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  margin: 0 auto;
+}
+
+form .post-input {
+  display: block;
+  margin-bottom: 15px;
+}
+form .post-input:nth-child(2) {
+  height: 22px;
+}
+
+form .post-input,
+form .post-input::placeholder {
+  font-weight: bold;
+  padding-left: 5px;
+  height: 25px;
+}
+
+.post-input:first-child {
+  padding-left: 0;
+}
+
+form button {
+  background-color: #0e9b4d;
+  color: #fff;
+  width: 150px;
+  align-self: center;
+  height: 30px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}

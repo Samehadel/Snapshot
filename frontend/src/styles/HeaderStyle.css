@@ -1,0 +1,38 @@
+.parent {
+  width: 100%;
+  height: 58px;
+  background-color: white;
+  margin-bottom: 10px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.header-container .logo {
+  text-decoration: none;
+  font-size: 30px;
+  margin-left: 10px;
+}
+.header-container button {
+  background-color: #0e9b4d;
+  width: 85px;
+  height: 35px;
+  margin-right: 10px;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 35px;
+  border: 1px;
+  cursor: pointer;
+}
+
+.header-container button:hover {
+  background-color: #54a578;
+}
+
+.post-image {
+  width: 25px;
+  height: 25px;
+}
